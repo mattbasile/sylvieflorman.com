@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylvie Florman | Freelance Writer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;500;600&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<body 
+  x-data="clips()"
+>
+  <nav>
+    <h1>Sylvie Florman</h1>
+    <div class="nav-links">
+      <a href="about.html" class="links">About</a>
+      <a href="index.html" class="links selected">Clips</a>
+    </div>
+  </nav>
+  <main>
+    <template  x-for="(clip, index) in clips" :key="index">
+      <a class="clip" x-bind:href="clip.link" x-text="clip.title" target="_blank"></a>
+    </template>
+  </main>
+  <script src="js/clips.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+			defer
+		></script>
+</body>
+</html>
