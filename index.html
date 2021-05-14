@@ -21,7 +21,13 @@
   </nav>
   <main>
     <template  x-for="(clip, index) in clips" :key="index">
-      <a class="clip" x-bind:href="clip.link" x-text="clip.title" target="_blank"></a>
+      <div class="clip-container">
+        <a class="clip" x-bind:href="clip.link" x-text="clip.title" target="_blank">
+        </a>
+        <div class="img-container">
+          <img x-bind:src="clip.image" x-bind:alt="clip.title" loading="lazy">
+        </div>
+      </div>
     </template>
   </main>
   <script src="js/clips.js"></script>
@@ -31,3 +37,6 @@
 		></script>
 </body>
 </html>
+
+<!-- https://github.com/zaxwebs/tailwind-alpine/tree/main/slack -->
+<!-- https://markus.oberlehner.net/blog/building-a-good-old-12-column-css-grid-framework-with-css-grid-layout/ -->
