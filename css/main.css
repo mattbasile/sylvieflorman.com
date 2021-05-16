@@ -104,11 +104,8 @@ main{
   top: -50%;
   z-index: -1;
   display: none;
-}
-.img-container img{
-  z-index: 0;
-  max-width: 100%;
-  vertical-align: middle;
+  height: 350px;
+  width: 100%;
 }
 .img-container::before{
   content: "";
@@ -121,7 +118,54 @@ main{
 .clip-container:hover .img-container{
   display: block;
 }
-
+/* About Page */
+.about-bio{
+  font-weight: 200;
+}
+.about-links{
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.contact-links{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-links a{
+  width: 200px;
+  text-transform: none;
+  font-weight: 200;
+  display: block;
+  margin-top: 12px;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.profile-image{
+  background-image: url("../images/sylvie-florman.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 391px;
+  height: 405px;
+  padding: 0;
+  display: block;
+}
+.about-bio{
+  width: 65%;
+  padding-right: 5%;
+  font-size: 17.168px;
+  line-height: 28px;
+}
+.about-bio span{
+  display: block;
+  margin-bottom: 11px;
+}
 /* 
   Tablet
 */
@@ -189,6 +233,33 @@ main{
   .clip:hover{
     text-decoration: underline;
   }
+  .profile-image{
+    background-image: url("../images/sylvie-florman.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 176.59px;
+    padding: 50px 0;
+    display: block;
+  }
+  .about{
+    display: block;
+  }
+  .about-bio{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 11.6643px;
+    line-height: 19px;
+  }
+  .contact{
+    margin-top: 24px;
+  }
+  .contact-links a{
+    width: 100%;
+    text-decoration: none;
+    margin-top: 19px;
+  }
  }
 @media (max-width: 711px) {
   nav{
@@ -218,27 +289,23 @@ main{
     line-height: 26px;
     margin-bottom: 10px;
   }
-  .img-container img{
-    height: 100%;
+  .img-container{
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
  }
  @media (max-width: 350px) { 
   h1{
-    font-size: 28px;
+    font-size: 37px;
+    width: 100%;
     font-weight: 600;
     margin: 0;
   }
-  .img-container img{
-    height: 100%;
+  .img-container{
     width: 100%;
     height: 150px;
   }
-  .nav-links{
-    flex-wrap: wrap;
-  }
-  .links{
-    width: 100%;
+  body{
+    margin: 0 30px;
   }
  }

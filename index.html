@@ -15,8 +15,8 @@
   <nav>
     <h1>Sylvie Florman</h1>
     <div class="nav-links">
-      <a href="about.html" class="links">About</a>
       <a href="index.html" class="links selected">Clips</a>
+      <a href="about.html" class="links">About</a>
     </div>
   </nav>
   <main>
@@ -24,9 +24,7 @@
       <div class="clip-container">
         <a class="clip" x-bind:href="clip.link" x-text="clip.title" target="_blank">
         </a>
-        <div class="img-container">
-          <img x-bind:src="clip.image" x-bind:alt="clip.title" loading="lazy">
-        </div>
+        <div class="img-container" :style="`background: url('${clip.image}') center/cover no-repeat`"></div>
       </div>
     </template>
   </main>
