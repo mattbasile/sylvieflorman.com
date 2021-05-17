@@ -10,8 +10,8 @@
 */
 
 body{
-  background-color: #fff;
-  color: #000;
+  background-color: #F6EBEE;
+  color: #1A3834;
   font-family: 'Libre Franklin', sans-serif;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -26,6 +26,10 @@ h1{
   font-size: 52px;
   font-weight: 600;
   line-height: 56px;
+}
+h1 a{
+  text-decoration: none;
+  color: #1A3834;
 }
 nav,
 footer{
@@ -52,7 +56,7 @@ footer{
   line-height: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color:#000;
+  color:#1A3834;
   padding-top: .375rem;
   padding-bottom: .375rem;
   text-align: center;
@@ -61,12 +65,12 @@ footer{
   border-radius: 100%;
 }
 .selected{
-  border: 1px solid #000;
+  border: 1px solid #1A3834;
 }
 .links:hover{
-  /* border: 1px solid #000; */
-  background-color: #000;
-  color: #fff;
+  /* border: 1px solid #1A3834; */
+  background-color: #1A3834;
+  color: #F6EBEE;
 }
 main{
   grid-column: span 10;
@@ -96,7 +100,7 @@ main{
   transform: rotate(180deg);
 }
 .clip{
-  color:#000;
+  color:#1A3834;
   text-decoration: none;
   font-weight: 200;
   font-size: 52px;
@@ -117,7 +121,7 @@ main{
   position:relative;
   z-index:2;}
 .clip-container:hover{
-  text-shadow: 1px 1px #fff, 1px -1px #fff, -1px -1px #fff, -1px 1px #fff;
+  text-shadow: 1px 1px #F6EBEE, 1px -1px #F6EBEE, -1px -1px #F6EBEE, -1px 1px #F6EBEE;
   display: inline-block;
   cursor: pointer;
   text-decoration:underline;
@@ -151,7 +155,7 @@ main{
 .about-links{
   font-weight: 500;
   text-decoration: none;
-  color: #000;
+  color: #1A3834;
   cursor: pointer;
 }
 .contact-links{
@@ -243,7 +247,7 @@ main{
   }
   .img-container::before{
     content: none;
-    background: #fff;
+    background: #F6EBEE;
     width: 0%;
     height: 0%;
     position: none;
