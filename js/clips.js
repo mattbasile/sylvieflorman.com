@@ -1,9 +1,10 @@
 function clips(){
+  watchArrow();
   return {
     clips:[
       {
         title:"Meet the Women Making Tinned Fish Cool",
-        link:"https://mattbasile.devhttps://www.cntraveler.com/story/meet-the-women-making-tinned-fish-cool",
+        link:"https://www.cntraveler.com/story/meet-the-women-making-tinned-fish-cool",
         image:"https://media.cntraveler.com/photos/60596d8a7b588da524cfef4a/16:9/w_2560%2Cc_limit/SalmonSisters-2021-2.jpg",
       },
       {
@@ -44,3 +45,24 @@ function clips(){
     ]
   }
 }
+var lastScrollTop = 0;
+
+function watchArrow(){
+  let arrow = document.querySelector(".more-arrow");
+  let contentBody = document.querySelector("body");
+  let lastScrollTop = 0;
+
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+   let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+   if (st > lastScrollTop){
+      // downscroll code
+      arrow.classList.remove("point-up");
+   } else {
+      // upscroll code
+      arrow.classList.add("point-up");
+   }
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
+}
+
