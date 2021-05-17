@@ -76,7 +76,6 @@ main{
   grid-column: span 10;
   grid-column-start: 2;
   grid-column-end: 12;
-  height: 100%;
   width: 100%;
   margin-top: 40px;
   top: 0;
@@ -225,6 +224,9 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+  footer{
+    display: block;
   }
   .clip-container{
     display: flex;
