@@ -158,6 +158,9 @@ main{
   color: #1A3834;
   cursor: pointer;
 }
+.about-links:hover{
+  text-decoration: underline;
+}
 .contact-links{
   display: flex;
   justify-content: space-between;
