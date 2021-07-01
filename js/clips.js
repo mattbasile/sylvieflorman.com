@@ -1,19 +1,6 @@
 function clips(){
-  watchArrow();
   return {
-    clips:[
-      {
-        title:"Meet the Women Making Tinned Fish Cool",
-        publisher:"Condé Nast Traveler",
-        link:"https://www.cntraveler.com/story/meet-the-women-making-tinned-fish-cool",
-        image:"https://media.cntraveler.com/photos/60596d8a7b588da524cfef4a/16:9/w_2560%2Cc_limit/SalmonSisters-2021-2.jpg",
-      },
-      {
-        title:"9 North Fork food trucks for a delicious socially distanced date",
-        publisher:"The Northforker",
-        link:"https://northforker.com/2020/08/9-north-fork-food-trucks-for-a-delicious-socially-distanced-date/",
-        image:"https://i0.wp.com/northforker.com/files/2020/08/RollinginDough.jpeg?resize=768%2C1024&ssl=1",
-      },
+    localClips:[
       {
         title:"Farming in the Era of Climate Change: An Interview with Lauren Nagy",
         publisher:"Local Roots",
@@ -50,27 +37,37 @@ function clips(){
         link:"https://localrootsnyc.com/blogs/news/the-overlooked-history-of-regenerative-agriculture-and-csas-in-america?_pos=12&_sid=442bc9926&_ss=r",
         image:"https://cdn.shopify.com/s/files/1/1812/9769/files/IMG_9084_480x480.jpg?v=1600278282",
       },
+    ],
+    selectedClips:[
+      {
+        title:"Meet the Women Making Tinned Fish Cool",
+        publisher:"Condé Nast Traveler",
+        link:"https://www.cntraveler.com/story/meet-the-women-making-tinned-fish-cool",
+        // image:"https://media.cntraveler.com/photos/60596d8a7b588da524cfef4a/16:9/w_2560%2Cc_limit/SalmonSisters-2021-2.jpg",
+      },
+      {
+        title:"9 North Fork food trucks for a delicious socially distanced date",
+        publisher:"The Northforker",
+        link:"https://northforker.com/2020/08/9-north-fork-food-trucks-for-a-delicious-socially-distanced-date/",
+        // image:"https://i0.wp.com/northforker.com/files/2020/08/RollinginDough.jpeg?resize=768%2C1024&ssl=1",
+      },
+    ],
+    careClips:[
+      {
+        title:"@careofchan",
+        publisher:"Copywriting and content management",
+        link:"https://www.instagram.com/careofchan/?hl=en",
+      },
+      {
+        title:"Eating in Isolation Podcast",
+        publisher:"Research and production",
+        link:"https://podcasts.apple.com/gb/podcast/eating-in-isolation/id1564279560",
+      },
+      {
+        title:"The Correspondence Newsletter",
+        publisher:"Contributor and editor",
+        link:"https://us16.campaign-archive.com/home/?u=5fb6bbf69133e43c81d868b55&id=36c5b4ed65",
+      },
     ]
   }
 }
-var lastScrollTop = 0;
-
-function watchArrow(){
-  let arrow = document.querySelector(".more-arrow");
-  let contentBody = document.querySelector("body");
-  let lastScrollTop = 0;
-
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-   let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-   if (st > lastScrollTop){
-      // downscroll code
-      arrow.classList.remove("point-up");
-   } else {
-      // upscroll code
-      arrow.classList.add("point-up");
-   }
-   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-}, false);
-}
-

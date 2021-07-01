@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sylvie Florman | Clips</title>
+  <title>Sylvie Florman | Home</title>
   <meta name="description" 
   content="Sylvie Florman is a freelance writer who has written for Condé Nast Traveler, The Northforker, Local Roots & Care of Chan.">
   <meta name='robots' content="noindex, follow">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;500;600&display=swap" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet" />
   <link rel="canonical" href="https://www.sylvieflorman.com/" />
-  <!-- Favicons -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;500;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/88f170fad1.js" crossorigin="anonymous"></script>
+  <link href="css/main.css" rel="stylesheet" />
+  
+    <!-- Favicons -->
   <!-- Opera Speed Dial Favicon -->
   <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" />
 			
@@ -22,8 +25,6 @@
 <!-- For iPhone 4 Retina display: -->
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons//apple-touch-icon.png" />
 
-  <!-- Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-47VT58LN02"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,42 +34,33 @@
     gtag('config', 'G-47VT58LN02');
   </script>
 </head>
-<body 
-  x-data="clips()"
->
+<body>
   <nav>
     <h1><a href="index.html" >Sylvie Florman</a></h1>
     <div class="nav-links">
-      <a href="index.html" class="links selected">Clips</a>
-      <a href="about.html" class="links">About</a>
+      <a href="index.html" class="links selected">Bio</a>
+      <a href="works.html" class="links ">Works</a>
     </div>
   </nav>
-  <div class="more">
-    <div class="more-container">
-      <p>More</p>
-      <svg class="more-arrow" width="30" height="160" viewBox="0 0 30 160" fill="#1A3834" xmlns="https://www.w3.org/2000/svg">
-        <path d="M13.5858 159.414C14.3668 160.195 15.6332 160.195 16.4142 159.414L29.1421 146.686C29.9232 145.905 29.9232 144.639 29.1421 143.858C28.3611 143.077 27.0948 143.077 26.3137 143.858L15 155.172L3.68629 143.858C2.90524 143.077 1.63891 143.077 0.857858 143.858C0.0768093 144.639 0.0768092 145.905 0.857858 146.686L13.5858 159.414ZM13 -8.74228e-08L13 158L17 158L17 8.74228e-08L13 -8.74228e-08Z" fill="#6E0801"/>
-      </svg>
-    </div>
-  </div>
+
   <main>
-    <template  x-for="(clip, index) in clips" :key="index">
-      <div class="clip-container">
-        <a class="clip" x-bind:href="clip.link" x-text="clip.title" target="_blank">
-        </a>
-        <div class="img-container" :style="`background: url('${clip.image}') center/cover no-repeat`">
-          <span class="publisher" x-text="clip.publisher"></span>
-        </div>
-      </div>
-    </template>
+    <div class="about-bio">
+      <span>Sylvie is a freelance writer and content strategist. She covers food, travel, and culture.</span>
+      <span>Previously, she helped launch an <a class="about-links" target="_blank" href="https://shop.careofchan.com/">ecommerce pop-up shop</a> in celebration of the <a class="about-links" target="_blank" href="https://www.vogue.com/article/lunar-new-year-chinatown-sue-chan">Lunar New Year</a>, and another which <a class="about-links" target="_blank" href="https://www.nytimes.com/2020/04/06/dining/save-restaurants.html">helped support restaurants.</a> She collaborates on various special projects with food culture agency, <a class="about-links" target="_blank" href="https://www.careofchan.com/">Care of Chan</a>. Previously, she worked alongside <a class="about-links" target="_blank" href="https://www.nytimes.com/section/parenting">journalists</a>, <a class="about-links" target="_blank" href="https://www.nytimes.com/subscription/games?campaignId=98997&ds_c=71700000067180314&gclsrc=aw.ds">game designers</a>, and <a class="about-links" target="_blank" href="https://cooking.nytimes.com/">chefs</a> at The New York Times.</span>
+      <span>She lives in Brooklyn, went to school in Ohio, and was raised in Boston.</span>
+      <!-- <span>Check out her <a class="about-links" target="_blank" href="https://www.linkedin.com/in/sylvie-florman/">Linkedin</a> for further experience and details.</span> -->
+    </div>
   </main>
   <footer>
-    <p>&copy; 2020 - 2021 Sylvie Florman. All Rights Reserved.</p>
+    <a class="email-link" href="mailto:sylvie.florman@gmail.com">sylvie.florman@gmail.com</a>
+    <div class="social-links">
+      <a target="_blank" href="https://www.instagram.com/sylvieflo/?igshid=8agujrtzphpa">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/sylvie-florman/">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+    </div>
   </footer>
-  <script src="js/clips.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>
-
-<!-- https://github.com/zaxwebs/tailwind-alpine/tree/main/slack -->
-<!-- https://markus.oberlehner.net/blog/building-a-good-old-12-column-css-grid-framework-with-css-grid-layout/ -->
