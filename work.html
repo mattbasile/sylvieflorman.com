@@ -41,7 +41,7 @@
     <h1><a href="index.html" >Sylvie Florman</a></h1>
     <div class="nav-links">
       <a href="index.html" class="links ">Bio</a>
-      <a href="works.html" class="links selected">Works</a>
+      <a href="work.html" class="links selected">Work</a>
     </div>
   </nav>
   <main class="works">
@@ -49,7 +49,6 @@
     <template  x-for="(clip, index) in selectedClips" :key="index">
       <a x-bind:href="clip.link" target="_blank" class="clip-container">
         <span class="clip"  x-text="clip.title"></span>
-        -
         <span class="publisher" x-text="clip.publisher"></span>
       </a>
     </template>
@@ -58,15 +57,13 @@
     <template  x-for="(clip, index) in careClips" :key="index">
       <a x-bind:href="clip.link" target="_blank" class="clip-container">
         <span class="clip"  x-text="clip.title"></span>
-        -
         <span class="publisher" x-text="clip.publisher"></span>
       </a>
     </template>
-    <a href="https://localrootsnyc.com/" target="_blank" class="clip-subheader"><h3>Local Roots NYC</h3></a>
+    <a href="https://localrootsnyc.com/" target="_blank" class="clip-subheader"><h3 class="mt-4">Local Roots NYC</h3></a>
     <template  x-for="(clip, index) in localClips" :key="index">
       <a x-bind:href="clip.link" target="_blank" class="clip-container">
         <span class="clip"  x-text="clip.title"></span>
-        -
         <span class="publisher" x-text="clip.publisher"></span>
       </a>
     </template>

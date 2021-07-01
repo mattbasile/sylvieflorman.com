@@ -13,14 +13,8 @@ body{
   background-color: #FAEECF;
   color: #6E0801;
   font-family: 'Libre Franklin', sans-serif;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  grid-row: 0;
-  margin: 0 60px;
-  height: 100vh;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 h1{
   font-size: 52px;
@@ -31,10 +25,20 @@ h1 a{
   text-decoration: none;
   color: #6E0801;
 }
-
+h2{
+  margin-bottom: 0;
+}
+h3{
+  margin: 0 auto;
+}
 .email-link{
   color: #6E0801;
   margin-bottom: 8px;
+  text-decoration: none;
+  font-style: italic;
+}
+.email-link:hover{
+  text-decoration: underline;
 }
 .social-links a{
   margin: 4px;
@@ -46,14 +50,18 @@ h1 a{
 }
 nav,
 footer{
-  grid-column: span 10;
-  grid-column-start: 2;
-  grid-column-end: 12;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  padding: 12px 0 24px;
+  left: 0;
+  right: 0;
 }
 .nav-links{
   display: flex;
@@ -82,17 +90,12 @@ footer{
   color: #FAEECF;
 }
 main{
-  grid-column: span 10;
-  grid-column-start: 2;
-  grid-column-end: 12;
   width: 100%;
   margin-top: 40px;
   top: 0;
   bottom: 0;
 }
-.mt-8{
-  margin-top: 3rem;
-}
+
 .works{
   width: 60%;
   margin: 0 auto;
@@ -109,18 +112,22 @@ main{
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
-  margin-right: 5px;
+  margin-right: 10px;
   text-decoration: underline;
 }
 .clip-subheader{
   text-decoration: none;
   color: #6E0801;
 }
+.clip-subheader{
+  display: block;
+  margin-bottom: -6px;
+  margin-top: 12px;
+}
 .clip-subheader:hover{
   text-decoration: underline;
 }
 .publisher{
-  margin-left: 5px;
   font-weight: 200;
   text-decoration: none;
   font-style: italic;
@@ -193,8 +200,7 @@ main{
     display: block;
   }
   .about-bio,.works{
-    width: 100%;
-    margin-top: 20px;
+    margin: 20px auto;
     font-size: 18px;
     line-height: 26px;
   }
@@ -211,6 +217,12 @@ main{
   nav{
     justify-content: center;
   }
+  footer{
+    position: static;
+  }
+  .works,.about-bio{
+    width:90%;
+  }
 }
 /*
   Mobile
@@ -221,7 +233,6 @@ body{
   display: block
 }
 nav{
-  grid-column: 1fr;
   width: 100%;
   height: auto;
 }
@@ -230,6 +241,13 @@ h1{
   font-weight: 600;
   margin: 0;
 }
+h2{
+  font-size: 1.25rem;
+}
+h3{
+  font-size: 1rem;
+}
+
 }
 @media (max-width: 350px) { 
 h1{
@@ -242,4 +260,10 @@ body{
   margin: 0 30px;
 }
 }
- 
+
+.mt-8{
+  margin-top: 3rem;
+}
+.mt-4{
+  margin-top: 20px;
+}
