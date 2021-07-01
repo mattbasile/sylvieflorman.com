@@ -3,37 +3,37 @@ function clips(){
     localClips:[
       {
         title:"Tie-Dye Frittata",
-        publisher:" - Recipe Development",
+        publisher:" - Recipe Developer",
         link:"https://harvestclub.localrootsnyc.com/blogs/recipes/tie-dye-frittata?_pos=6&_sid=1adf32683&_ss=r",
       },
       {
         title:"Autumn Vegetable and White Bean Soup",
-        publisher:" - Recipe Development",
+        publisher:" - Recipe Developer",
         link:"https://harvestclub.localrootsnyc.com/blogs/recipes/autumn-vegetable-and-white-bean-soup?_pos=3&_sid=1adf32683&_ss=r",
       },
       {
         title:"Crispy Eggplant Coins w/ Yogurt Tahini Dip",
-        publisher:" - Recipe Development",
+        publisher:" - Recipe Developer",
         link:"https://harvestclub.localrootsnyc.com/blogs/recipes/asian-eggplant-coins-w-yogurt-tahini-dip?_pos=2&_sid=1adf32683&_ss=r",
       },
       {
         title:"Farming in the Era of Climate Change: An Interview with Lauren Nagy of Ironbound Farm",
-        publisher:" - Blog Post",
+        publisher:" - Blog Contributor",
         link:"https://harvestclub.localrootsnyc.com/blogs/news/climate-week-an-interview-with-lauren-nagy-of-ironbound-farm?_pos=9&_sid=1adf32683&_ss=r",
       },
       {
         title:"Soil Health Impacts Flavor and Nutrition",
-        publisher:" - Blog Post",
+        publisher:" - Blog Contributor",
         link:"https://harvestclub.localrootsnyc.com/blogs/news/soil-health-impacts-flavor-and-nutrition?_pos=11&_sid=1adf32683&_ss=r",
       },
       {
         title:"The Overlooked History of Regenerative Agriculture and CSAs in America",
-        publisher:" - Blog Post",
+        publisher:" - Blog Contributor",
         link:"https://harvestclub.localrootsnyc.com/blogs/news/the-overlooked-history-of-regenerative-agriculture-and-csas-in-america?_pos=12&_sid=1adf32683&_ss=r",
       },
       {
         title:"How to continue eating with friends when picnic season is over",
-        publisher:" - Blog Post",
+        publisher:" - Blog Contributor",
         link:"https://harvestclub.localrootsnyc.com/blogs/news/how-to-continue-eating-with-friends-when-picnic-season-is-over?_pos=14&_sid=1adf32683&_ss=r",
       },
     ],
