@@ -110,7 +110,10 @@ main{
 }
 .clip{
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
+}
+.clip:hover{
+  text-decoration: underline;
 }
 .clip-subheader{
   text-decoration: none;
@@ -123,7 +126,7 @@ main{
 }
 
 .publisher{
-  font-weight: 400;
+  font-weight: 200;
   text-decoration: none;
   font-style: italic;
 }
