@@ -50,6 +50,12 @@ function clips(){
         link:"https://northforker.com/2020/08/9-north-fork-food-trucks-for-a-delicious-socially-distanced-date/",
         // image:"https://i0.wp.com/northforker.com/files/2020/08/RollinginDough.jpeg?resize=768%2C1024&ssl=1",
       },
+      {
+        title:"This Modern Hardware Store Will Help You Get Over Your Toolbox Anxiety",
+        publisher:" - Architectural Digest",
+        link:"https://www.architecturaldigest.com/story/yuns-hardware-store-kelly-wright-interview",
+        // image:"https://media.architecturaldigest.com/photos/611d0a051409bd6d957c05ea/1:1/w_120,c_limit/Chapman%2520Screw%2520Set.jpg 120w, https://media.architecturaldigest.com/photos/611d0a051409bd6d957c05ea/1:1/w_240,c_limit/Chapman%2520Screw%2520Set.jpg 240w, https://media.architecturaldigest.com/photos/611d0a051409bd6d957c05ea/1:1/w_320,c_limit/Chapman%2520Screw%2520Set.jpg 320w, https://media.architecturaldigest.com/photos/611d0a051409bd6d957c05ea/1:1/w_640,c_limit/Chapman%2520Screw%2520Set.jpg 640w, https://media.architecturaldigest.com/photos/611d0a051409bd6d957c05ea/1:1/w_960,c_limit/Chapman%2520Screw%2520Set.jpg 960w",
+      },
     ],
     careClips:[
       {
